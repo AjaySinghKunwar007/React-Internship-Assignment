@@ -1,0 +1,73 @@
+
+.p-datatable {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.p-datatable .p-datatable-thead>tr>th {
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.p-datatable .p-datatable-tbody>tr>td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #000000;
+  font-size: small;
+}
+
+.p-datatable svg.p-icon {
+  pointer-events: auto;
+  visibility: hidden;
+  display: none;
+}
+
+.p-datatable .p-datatable-tbody>tr:hover {
+  background-color: #48eb48;
+}
+
+.p-datatable .p-datatable-tbody>tr>td:first-child {
+  text-align: center;
+}
+
+.p-paginator {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page {
+  border-radius: 50%;
+  border: 1px solid #4CAF50;
+  background-color: white;
+  color: #4CAF50;
+  margin: 0 4px;
+  padding: 5px 10px;
+}
+
+.p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background-color: #4CAF50;
+  color: rgb(231, 20, 20);
+}
+
+.p-paginator .p-paginator-first,
+.p-paginator .p-paginator-last,
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next {
+  color: #4CAF50;
+}
+
+
+@media (max-width: 768px) {
+  .p-datatable {
+    font-size: 0.9em;
+  }
+
+  .p-datatable .p-datatable-tbody>tr>td {
+    padding: 8px;
+  }
+}
